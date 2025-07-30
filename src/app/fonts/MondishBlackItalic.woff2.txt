@@ -1,0 +1,4 @@
+/* 
+Placeholder file untuk Mondish Black Italic font
+Klien perlu mengganti file ini dengan font asli MondishBlackItalic.woff2
+*/

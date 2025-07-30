@@ -1,4 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Waroeng Bebek Ngarasan - Website Landing Page
+
+Website landing page responsif untuk Waroeng Bebek Ngarasan menggunakan Next.js, TypeScript, dan Tailwind CSS.
+
+## 🎨 Font Configuration
+
+Website ini menggunakan 2 font custom:
+
+### 1. **Mondish Black Italic** (untuk Headers)
+- **File**: `src/app/fonts/MondishBlackItalic.otf` ✅
+- **Usage**: Class `font-heading` di Tailwind
+- **Status**: Aktif
+
+### 2. **Araboto Medium** (untuk Paragraphs/Body)
+- **File**: `src/app/fonts/Araboto Medium 400.ttf` ✅
+- **Usage**: Class `font-body` di Tailwind
+- **Status**: Aktif
+
+## 📁 Instalasi Font Custom
+
+1. **Replace font files** di folder `src/app/fonts/`:
+   - Ganti `MondishBlackItalic.woff2.txt` dengan `MondishBlackItalic.woff2`
+   - Ganti `ArabotoMedium.woff2.txt` dengan `ArabotoMedium.woff2`
+
+2. **Update layout.tsx** setelah font files tersedia:
+   ```typescript
+   // Uncomment dan sesuaikan dengan file font asli
+   const mondishBlackItalic = localFont({
+     src: "./fonts/MondishBlackItalic.woff2",
+     variable: "--font-mondish",
+     display: "swap",
+   });
+   ```
+
+## 🚀 Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Carousel**: SwiperJS
+- **Fonts**: Custom fonts (Mondish Black Italic + Araboto Medium)
+- **Deployment**: Vercel
 
 ## Getting Started
 

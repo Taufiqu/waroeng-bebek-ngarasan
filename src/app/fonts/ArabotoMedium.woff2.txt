@@ -1,0 +1,4 @@
+/* 
+Placeholder file untuk Araboto Medium font
+Klien perlu mengganti file ini dengan font asli ArabotoMedium.woff2
+*/
