@@ -3,6 +3,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { useRef } from 'react';
+import type { SwiperRef } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -67,7 +68,7 @@ const menuItems = [
 ];
 
 export default function MenuPage() {
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<SwiperRef>(null);
 
   return (
     <div className="min-h-screen">

@@ -26,7 +26,7 @@ export default function ProfilePage() {
               fontFamily: 'var(--font-mondish-black-italic), serif',
               lineHeight: '1.1'
             }}>
-              'Tak Rindu karena tidak Mengenal, maka mari Mengenal
+              &lsquo;Tak Rindu karena tidak Mengenal, maka mari Mengenal
             </h1>
           </div>
 
@@ -36,11 +36,11 @@ export default function ProfilePage() {
             {/* Column 1 - Main Story */}
             <div className="space-y-4">
               <p className="text-lg leading-tight text-justify" style={{color: '#936348'}}>
-                Waroeng Bebek Ngarasan berdiri pada tahun 2007 di Bandung, Jawa Barat, sebagai usaha pengolahan pangan rumahan. Filosofi nama 'Ngarasan' sendiri, pemilik ingin menciptakan makanan yang enak secara teknis dan membekas secara emosional. Waroeng Bebek Ngarasan sendiri memiliki awalnya mengusung konsep cepat saji karena lokasi di sekitar kampus. Lalu ada tahun 2015, rumah makan resmi mengusung konsep tema rumah jaman dulu (vintage) Indonesia untuk keluarga, dengan suasana hangat nyaman, resep rumahan, dan sentuhan nostalgia.
+                Waroeng Bebek Ngarasan berdiri pada tahun 2007 di Bandung, Jawa Barat, sebagai usaha pengolahan pangan rumahan. Filosofi nama &lsquo;Ngarasan&rsquo; sendiri, pemilik ingin menciptakan makanan yang enak secara teknis dan membekas secara emosional. Waroeng Bebek Ngarasan sendiri memiliki awalnya mengusung konsep cepat saji karena lokasi di sekitar kampus. Lalu ada tahun 2015, rumah makan resmi mengusung konsep tema rumah jaman dulu (vintage) Indonesia untuk keluarga, dengan suasana hangat nyaman, resep rumahan, dan sentuhan nostalgia.
               </p>
               
               <p className="text-lg leading-tight text-justify" style={{color: '#936348'}}>
-                Ide untuk menjual bebek oven ngarasan muncul saat melihat bebek dianggap makanan "bermasalah" (amis, alot, terlalu berminyak). sehingga pemiliki menemukan sebuah solusi, yaitu memanggang bebek dengan teknik oven slow-cook agar tekstur empuk, aroma bumbu rahasia tetap kuat dan meresap hingga ke serat daging.
+                Ide untuk menjual bebek oven ngarasan muncul saat melihat bebek dianggap makanan &ldquo;bermasalah&rdquo; (amis, alot, terlalu berminyak). sehingga pemiliki menemukan sebuah solusi, yaitu memanggang bebek dengan teknik oven slow-cook agar tekstur empuk, aroma bumbu rahasia tetap kuat dan meresap hingga ke serat daging.
               </p>
 
               <p className="text-lg leading-tight text-justify" style={{color: '#936348'}}>
@@ -84,7 +84,7 @@ export default function ProfilePage() {
                 fontFamily: 'var(--font-mondish-bold-italic), serif',
                 textShadow: '1px 1px 2px rgba(0,0,0,0.1)'
               }}>
-                "Tidak ada makanan terbaik, yang ada hanya resep makanan yang lebih baik."
+                &ldquo;Tidak ada makanan terbaik, yang ada hanya resep makanan yang lebih baik.&rdquo;
               </h2>
             </div>
 
