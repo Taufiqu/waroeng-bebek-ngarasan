@@ -23,6 +23,46 @@ body {
   font-family: var(--font-mondish), serif;
 }
 
+.font-heading-light {
+  font-family: var(--font-mondish), serif;
+  font-weight: 300 !important;
+  filter: contrast(0.8);
+}
+
 .font-body {
   font-family: var(--font-araboto), sans-serif;
+}
+
+/* Swiper Custom Styles */
+.menu-swiper .swiper-button-next,
+.menu-swiper .swiper-button-prev {
+  color: #d97706;
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.menu-swiper .swiper-button-next:after,
+.menu-swiper .swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-swiper .swiper-pagination-bullet {
+  background: #d97706;
+  opacity: 0.3;
+  width: 12px;
+  height: 12px;
+}
+
+.menu-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.menu-swiper .swiper-pagination {
+  bottom: -50px !important;
 }

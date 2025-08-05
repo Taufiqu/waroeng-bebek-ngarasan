@@ -1,62 +1,96 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Brand */}
-          <div>
-            <h3 className="text-lg font-heading font-bold text-amber-400 mb-4 italic">
-              Waroeng Bebek Ngarasan
-            </h3>
-            <p className="text-gray-300 text-sm font-body">
-              Sajian bebek terenak di kota dengan cita rasa tradisional yang autentik.
+    <footer className="bg-[#946449] text-white py-1">
+      <div className="max-w-8xl mx-auto px-6">
+        <div className="flex flex-col md:flex-row items-start justify-between gap-4">
+          
+          {/* Logo Section */}
+          <div className="flex items-center pl-10">
+            <Image 
+              src="/logo-icon-white.png" 
+              alt="Waroeng Bebek Ngarasan Logo" 
+              width={80} 
+              height={80}
+              className="mr-4"
+            />
+          </div>
+          
+          {/* Vertical Divider */}
+          <div className="hidden md:block pt-3 -ml-4 mr-4">
+            <div className="w-1 bg-[#F1E2D0] opacity-60" style={{ height: '70px' }}></div>
+          </div>
+          
+          {/* Content Grid */}
+          <div className="flex-1 grid grid-cols-2 md:grid-cols-4 gap-0 text-sm items-start pt-4">
+            
+            {/* Address */}
+            <div className='text-left -mt-1 mb-2'>
+              <h3 className="font-heading medium mb-2 text-[#F1E2D0] pl-4 text-xl">Address</h3>
+              <p className="text-[#F1E2D0] leading-relaxed pl-4 -mt-2">
+                Jl. Tubagus Ismail No.21,<br />
+                Sekeloa, Kecamatan<br />
+                Coblong, Kota Bandung
+              </p>
+            </div>
+            
+            {/* Opening Hours */}
+            <div className='-mt-1'>
+              <h3 className="font-heading medium mb-2 text-[#F1E2D0] pl-4 text-xl">Opening Hours</h3>
+              <p className="text-[#F1E2D0] leading-relaxed pl-4">
+                Setiap Hari 11.00 - 22.00
+              </p>
+            </div>
+            
+            {/* Contact */}
+            <div className='-mt-1'>
+              <h3 className="font-heading medium mb-2 text-[#F1E2D0] pl-4 text-xl">Contact</h3>
+              <p className="text-[#F1E2D0] leading-relaxed pl-4">
+                +62 811-2346-500<br />
+                ngarasan@markin.id
+              </p>
+            </div>
+            
+            {/* Follow */}
+            <div className='items-center -mt-1'>
+              <h3 className="font-heading medium mb-2 text-[#F1E2D0] pl-4 text-xl">Follow</h3>
+              <div className="flex gap-3 pl-1">
+                <a href="#" className="hover:opacity-80 transition-opacity">
+                  <Image 
+                    src="/logo-icon-facebook.png" 
+                    alt="Facebook" 
+                    width={24} 
+                    height={24}
+                  />
+                </a>
+                <a href="#" className="hover:opacity-80 transition-opacity">
+                  <Image 
+                    src="/logo-icon-instagram.png" 
+                    alt="Instagram" 
+                    width={24} 
+                    height={24}
+                  />
+                </a>
+              </div>
+            </div>
+            
+          </div>
+          
+          {/* Right Side - Privacy & Terms */}
+          <div className="text-right pr-10 pt-4">
+            <Link href="#" className="block hover:text-[#F1E2D0] text-xs mb-1 transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="#" className="block hover:text-[#F1E2D0] text-xs transition-colors">
+              Terms of Service
+            </Link>
+            <p className="text-xs mt-4 text-[#F1E2D0] opacity-80">
+              © 2025 Designed by Anissa Kultsum
             </p>
           </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-md font-body font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/" className="text-gray-300 hover:text-amber-400 transition-colors font-body">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/profile" className="text-gray-300 hover:text-amber-400 transition-colors font-body">
-                  Profile
-                </Link>
-              </li>
-              <li>
-                <Link href="/menu" className="text-gray-300 hover:text-amber-400 transition-colors">
-                  Menu
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-gray-300 hover:text-amber-400 transition-colors">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h4 className="text-md font-semibold mb-4">Hubungi Kami</h4>
-            <div className="space-y-2 text-gray-300 text-sm">
-              <p>📍 Jl. Contoh No. 123, Kota</p>
-              <p>📞 +62 123 456 7890</p>
-              <p>🕒 Buka: 10:00 - 22:00 WIB</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-gray-400 text-sm">
-            © 2025 Waroeng Bebek Ngarasan. All rights reserved.
-          </p>
+          
         </div>
       </div>
     </footer>
