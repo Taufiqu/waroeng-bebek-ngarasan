@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       {/* Hero Background Image Section */}
       <section className="relative h-screen bg-cover bg-center" style={{
         backgroundImage: "url('/hero-home-bg.jpg')"
@@ -34,16 +34,16 @@ export default function Home() {
       <div className="bg-[#f0e1cf]">
         {/* Profile Section - Gambar di Kanan */}
         <section className="py-12" style={{color: '#D84B26'}}>
-          <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 items-center">
-            <div className="md:col-span-2 p-8">
-              <h3 className="text-4xl font-normal mb-6" style={{color: '#627663', WebkitTextStroke: '0.5px white', textShadow: '2px 2px 2px rgba(0,0,0,0.5)', fontFamily: 'var(--font-roboto-black), sans-serif'}}>Profile</h3>
-              <h2 className="mb-6 text-orange-red" style={{fontFamily: 'var(--font-mondish-black-italic), serif', fontSize: '3.5rem', textShadow: '-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white', lineHeight: '1.1', wordSpacing: '-0.1em', width: '120%'}}>
+          <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12 items-center">
+            <div className="md:col-span-2 p-4 md:p-8">
+              <h3 className="text-3xl md:text-4xl font-normal mb-6" style={{color: '#627663', WebkitTextStroke: '0.5px white', textShadow: '2px 2px 2px rgba(0,0,0,0.5)', fontFamily: 'var(--font-roboto-black), sans-serif'}}>Profile</h3>
+              <h2 className="mb-6 text-orange-red" style={{fontFamily: 'var(--font-mondish-black-italic), serif', fontSize: 'clamp(2rem, 5vw, 3.5rem)', textShadow: '-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white', lineHeight: '1.1', wordSpacing: '-0.1em', width: '100%', maxWidth: '100%'}}>
                 Tak Rindu karena tidak Mengenal, maka mari Mengenal
               </h2>
               <div className="mt-8">
                 <Link 
                   href="/profile" 
-                  className="inline-flex items-center justify-start px-12 py-4 hover:opacity-80 transition-opacity"
+                  className="inline-flex items-center justify-start px-6 md:px-12 py-4 hover:opacity-80 transition-opacity"
                   style={{
                     backgroundImage: "url('/button/button-bg.png')", 
                     backgroundSize: '70%', 
@@ -51,18 +51,20 @@ export default function Home() {
                     backgroundPosition: 'left center',
                     border: 'none',
                     outline: 'none',
-                    minWidth: '280px',
+                    minWidth: '250px',
+                    width: '100%',
+                    maxWidth: '280px',
                     height: '70px'
                   }}
                 >
                   <img 
                     src="/button/profile-icon.png" 
                     alt="Profile Icon" 
-                    className="w-15 h-15 mr-9 -ml-7 drop-shadow-md " 
+                    className="w-12 md:w-15 h-12 md:h-15 mr-6 md:mr-9 -ml-4 md:-ml-7 drop-shadow-md" 
                   />
                   <div className="font-heading font-semibold leading-tight text-orange-red flex flex-col text-left" style={{textShadow: '-0.5px -0.5px 0 white, -0.5px -0.5px 0 white, -0.5px -0.5px 0 white, -0.5px -0.5px 0 white'}}>
-                    <span style={{fontSize: '1.1rem'}}>Lanjut ke</span>
-                    <span style={{fontSize: '1.7rem'}}>Profile</span>
+                    <span className="text-base md:text-lg">Lanjut ke</span>
+                    <span className="text-2xl md:text-3xl">Profile</span>
                   </div>
                 </Link>
               </div>
@@ -79,7 +81,7 @@ export default function Home() {
 
         {/* Menu Section - Gambar di Kiri */}
         <section className="py-12" style={{color: '#D84B26'}}>
-          <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 items-center">
+          <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12 items-center">
             <div className="order-2 md:order-1 md:col-span-2">
               <img 
                 src="/bebek-menu.png" 
@@ -87,15 +89,15 @@ export default function Home() {
                 className="w-full aspect-[4/3] object-cover rounded-3xl shadow-md"
               />
             </div>
-            <div className="order-1 md:order-2 md:col-span-2 p-8">
-              <h3 className="text-4xl font-normal mb-6" style={{color: '#627663', WebkitTextStroke: '0.5px white', textShadow: '2px 2px 2px rgba(0,0,0,0.5)', fontFamily: 'var(--font-roboto-black), sans-serif'}}>Menu</h3>
-              <h2 className="mb-6 text-orange-red" style={{fontFamily: 'var(--font-mondish-black-italic), serif', fontSize: '3.5rem', textShadow: '-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white', lineHeight: '1.1', wordSpacing: '-0.1em', width: '120%'}}>
+            <div className="order-1 md:order-2 md:col-span-2 p-4 md:p-8">
+              <h3 className="text-3xl md:text-4xl font-normal mb-6" style={{color: '#627663', WebkitTextStroke: '0.5px white', textShadow: '2px 2px 2px rgba(0,0,0,0.5)', fontFamily: 'var(--font-roboto-black), sans-serif'}}>Menu</h3>
+              <h2 className="mb-6 text-orange-red" style={{fontFamily: 'var(--font-mondish-black-italic), serif', fontSize: 'clamp(2rem, 5vw, 3.5rem)', textShadow: '-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white', lineHeight: '1.1', wordSpacing: '-0.1em', width: '100%', maxWidth: '100%'}}>
                 Dimasak dengan Kasih, Menghadirkan Cita pada Setiap Hidangan
               </h2>
               <div className="mt-8">
                 <Link 
                   href="/menu" 
-                  className="inline-flex items-center justify-start px-12 py-4 hover:opacity-80 transition-opacity"
+                  className="inline-flex items-center justify-start px-6 md:px-12 py-4 hover:opacity-80 transition-opacity"
                   style={{
                     backgroundImage: "url('/button/button-bg.png')", 
                     backgroundSize: '70%', 
@@ -103,18 +105,20 @@ export default function Home() {
                     backgroundPosition: 'left center',
                     border: 'none',
                     outline: 'none',
-                    minWidth: '280px',
+                    minWidth: '250px',
+                    width: '100%',
+                    maxWidth: '280px',
                     height: '70px'
                   }}
                 >
                   <img 
                     src="/button/menu-icon.png" 
                     alt="Menu Icon" 
-                    className="w-15 h-15 mr-9 -ml-7 drop-shadow-md" 
+                    className="w-12 md:w-15 h-12 md:h-15 mr-6 md:mr-9 -ml-4 md:-ml-7 drop-shadow-md" 
                   />
                   <div className="font-heading font-semibold leading-tight text-orange-red flex flex-col text-left" style={{textShadow: '-0.5px -0.5px 0 white, -0.5px -0.5px 0 white, -0.5px -0.5px 0 white, -0.5px -0.5px 0 white'}}>
-                    <span style={{fontSize: '1.25rem'}}>Lanjut ke</span>
-                    <span style={{fontSize: '1.7rem'}}>Menu</span>
+                    <span className="text-base md:text-xl">Lanjut ke</span>
+                    <span className="text-2xl md:text-3xl">Menu</span>
                   </div>
                 </Link>
               </div>
@@ -124,16 +128,16 @@ export default function Home() {
 
         {/* Contact Section - Gambar di Kanan */}
         <section className="py-12" style={{color: '#D84B26'}}>
-          <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 items-center">
-            <div className="md:col-span-2 p-8">
-              <h3 className="text-4xl font-normal mb-6" style={{color: '#627663', WebkitTextStroke: '0.5px white', textShadow: '2px 2px 2px rgba(0,0,0,0.5)', fontFamily: 'var(--font-roboto-black), sans-serif'}}>Contact</h3>
-              <h2 className="mb-6 text-orange-red" style={{fontFamily: 'var(--font-mondish-black-italic), serif', fontSize: '3.5rem', textShadow: '-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white', lineHeight: '1.1', wordSpacing: '-0.1em', width: '120%'}}>
+          <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12 items-center">
+            <div className="md:col-span-2 p-4 md:p-8">
+              <h3 className="text-3xl md:text-4xl font-normal mb-6" style={{color: '#627663', WebkitStroke: '0.5px white', textShadow: '2px 2px 2px rgba(0,0,0,0.5)', fontFamily: 'var(--font-roboto-black), sans-serif'}}>Contact</h3>
+              <h2 className="mb-6 text-orange-red" style={{fontFamily: 'var(--font-mondish-black-italic), serif', fontSize: 'clamp(2rem, 5vw, 3.5rem)', textShadow: '-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white', lineHeight: '1.1', wordSpacing: '-0.1em', width: '100%', maxWidth: '100%'}}>
                 Mari menyambung rasa dan kenangan di...
               </h2>
               <div className="mt-8">
                 <Link 
                   href="/contact" 
-                  className="inline-flex items-center justify-start px-12 py-4 hover:opacity-80 transition-opacity"
+                  className="inline-flex items-center justify-start px-6 md:px-12 py-4 hover:opacity-80 transition-opacity"
                   style={{
                     backgroundImage: "url('/button/button-bg.png')", 
                     backgroundSize: '70%', 
@@ -141,18 +145,20 @@ export default function Home() {
                     backgroundPosition: 'left center',
                     border: 'none',
                     outline: 'none',
-                    minWidth: '280px',
+                    minWidth: '250px',
+                    width: '100%',
+                    maxWidth: '280px',
                     height: '70px'
                   }}
                 >
                   <img 
                     src="/button/contact-icon.png" 
                     alt="Contact Icon" 
-                    className="w-15 h-15 mr-9 -ml-7 drop-shadow-md" 
+                    className="w-12 md:w-15 h-12 md:h-15 mr-6 md:mr-9 -ml-4 md:-ml-7 drop-shadow-md" 
                   />
                   <div className="font-heading font-semibold leading-tight text-orange-red flex flex-col text-left" style={{textShadow: '-0.5px -0.5px 0 white, -0.5px -0.5px 0 white, -0.5px -0.5px 0 white, -0.5px -0.5px 0 white'}}>
-                    <span style={{fontSize: '1.25rem'}}>Lanjut ke</span>
-                    <span style={{fontSize: '1.7rem'}}>Contact</span>
+                    <span className="text-base md:text-xl">Lanjut ke</span>
+                    <span className="text-2xl md:text-3xl">Contact</span>
                   </div>
                 </Link>
               </div>
