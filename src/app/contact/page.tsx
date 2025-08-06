@@ -5,13 +5,13 @@ export default function ContactPage() {
     <div className="min-h-screen">
       {/* Hero Section with Background Image and Social Media Buttons */}
       <section 
-        className="relative min-h-screen bg-cover bg-center flex items-center justify-start"
+        className="relative min-h-screen bg-cover bg-center flex items-center justify-center md:justify-start"
         style={{
           backgroundImage: "url('/suasana-warung.png')"
         }}
       > 
         {/* Content Container */}
-        <div className="relative z-10 max-w-[36rem] pl-16 text-left">
+        <div className="relative z-10 max-w-[36rem] px-4 md:pl-16 text-left">
           
           {/* Row 1 - Title */}
           <div className="mb-12">
