@@ -130,7 +130,7 @@ export default function Home() {
         <section className="py-12" style={{color: '#D84B26'}}>
           <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12 items-center">
             <div className="md:col-span-2 p-4 md:p-8">
-              <h3 className="text-3xl md:text-4xl font-normal mb-6" style={{color: '#627663', WebkitStroke: '0.5px white', textShadow: '2px 2px 2px rgba(0,0,0,0.5)', fontFamily: 'var(--font-roboto-black), sans-serif'}}>Contact</h3>
+              <h3 className="text-3xl md:text-4xl font-normal mb-6" style={{color: '#627663', WebkitTextStroke: '0.5px white', textShadow: '2px 2px 2px rgba(0,0,0,0.5)', fontFamily: 'var(--font-roboto-black), sans-serif'}}>Contact</h3>
               <h2 className="mb-6 text-orange-red" style={{fontFamily: 'var(--font-mondish-black-italic), serif', fontSize: 'clamp(2rem, 5vw, 3.5rem)', textShadow: '-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white', lineHeight: '1.1', wordSpacing: '-0.1em', width: '100%', maxWidth: '100%'}}>
                 Mari menyambung rasa dan kenangan di...
               </h2>
