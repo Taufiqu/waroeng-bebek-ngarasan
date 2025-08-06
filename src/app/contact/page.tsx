@@ -87,7 +87,7 @@ export default function ContactPage() {
 
               {/* WhatsApp Button */}
               <button 
-                onClick={() => window.open('https://wa.me/6281123465000?text=Halo%20Waroeng%20Bebek%20Ngarasan,%20saya%20ingin%20memesan', '_blank')}
+                onClick={() => window.open('https://wa.me/628112346500?text=Halo%20Waroeng%20Bebek%20Ngarasan,%20saya%20ingin%20memesan', '_blank')}
                 className="w-full flex items-center justify-center py-3 px-6 hover:scale-105 transition-transform"
                 style={{
                   backgroundImage: "url('/button-contact.png')",
@@ -110,6 +110,10 @@ export default function ContactPage() {
                   WhatsApp
                 </span>
               </button>
+            </div>
+
+            {/* Column 2 - Buttons 5-7 */}
+            <div className="space-y-4">
 
               {/* Email Button */}
               <button 
@@ -136,10 +140,6 @@ export default function ContactPage() {
                   Email
                 </span>
               </button>
-            </div>
-
-            {/* Column 2 - Buttons 5-7 */}
-            <div className="space-y-4">
               
               {/* GoFood Button */}
               <button 
@@ -190,32 +190,6 @@ export default function ContactPage() {
                   }}
                 >
                   GrabFood
-                </span>
-              </button>
-
-              {/* ShopeeFood Button */}
-              <button 
-                onClick={() => window.open('https://shopee.co.id/universal-link/now-food/shop/859052?deep_and_deferred=1&shareChannel=copy_info', '_blank')}
-                className="w-full flex items-center justify-center py-3 px-6 hover:scale-105 transition-transform"
-                style={{
-                  backgroundImage: "url('/button-contact.png')",
-                  backgroundSize: 'contain',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundPosition: 'center',
-                  minHeight: '50px',
-                  border: 'none'
-                }}
-              >
-                <span 
-                  className="font-bold"
-                  style={{
-                    color: '#f0e1cf',
-                    fontFamily: 'var(--font-mondish-bold), serif',
-                    textShadow: '2px 2px 4px rgba(0,0,0,0.8)',
-                    fontSize: '1.4rem'
-                  }}
-                >
-                  ShopeeFood
                 </span>
               </button>
             </div>

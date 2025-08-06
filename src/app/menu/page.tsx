@@ -73,7 +73,7 @@ export default function MenuPage() {
   return (
     <div className="min-h-screen overflow-x-hidden">
       {/* Hero Section with Background Image */}
-      <section className="relative h-64 sm:h-80 md:h-[500px] lg:h-[700px] xl:h-[900px] bg-cover bg-center" style={{
+      <section className="relative min-h-screen bg-cover bg-center flex items-center justify-center md:justify-start" style={{
         backgroundImage: "url('/bebek-menu.png')"
       }}>
         <div className="absolute inset-0 bg-black/20"></div>
