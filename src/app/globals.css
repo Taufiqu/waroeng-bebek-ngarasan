@@ -66,3 +66,25 @@ body {
 .menu-swiper .swiper-pagination {
   bottom: -50px !important;
 }
+
+.custom-button-bg {
+  background-size: 72%; /* Mobile default */
+}
+
+@media (min-width: 768px) {
+  .custom-button-bg {
+    background-size: 75%; /* Tablet */
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .custom-button-bg {
+    background-size: 62%; /* Laptop 1366px */
+  }
+}
+
+@media (min-width: 1440px) {
+  .custom-button-bg {
+    background-size: 85%; /* Desktop besar */
+  }
+}
